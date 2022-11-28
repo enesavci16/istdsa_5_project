@@ -28,11 +28,11 @@ st.title('BEST JOBS')
 
 
 
-st.sidebar.header('INPUT')
 
-a = st.text_input('First enry jobs:','Data Scientist')
-b = st.text_input('Second enry jobs:','Physician')
-c = st.text_input('Third enry jobs:','Medical and Health Services Manager')
+
+a = st.text_input('Please first  entry occupation:','Data Scientist')
+b = st.text_input('Please second  entry occupation:','Physician')
+c = st.text_input('Please third  entry occupation:','Medical and Health Services Manager')
 
 
 def get_recommendations(job_name, cosine_sim=cosine_sim):
@@ -91,7 +91,7 @@ except:
 try:
     sonuc=sonuc_1.union(sonuc_2).union(sonuc_3).union(sonuc_4)
 except:
-    print("please enter the jobs in the list If you do not know the professions to choose you can look 'https://money.usnews.com/careers/best-jobs/rankings/the-100-best-jobs'  ")
+    print("please entery the jobs in the list If you do not know the professions to choose you can look 'https://money.usnews.com/careers/best-jobs/rankings/the-100-best-jobs'  ")
 
 
 print(sonuc)
