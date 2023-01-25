@@ -1,5 +1,5 @@
 
-import main
+import main.py
 
 
 import warnings
